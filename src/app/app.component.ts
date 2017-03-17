@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  contrasena:string = "esedf*99";
+  _ocultarPassword:boolean = true;
+
+  togglePassword(){
+    this._ocultarPassword = !this._ocultarPassword;
+  }
 }
